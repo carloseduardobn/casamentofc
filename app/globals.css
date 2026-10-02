@@ -1,6 +1,6 @@
 :root {
-  --ink: #10261f;
-  --ink-soft: #234238;
+  --ink: #18324a;
+  --ink-soft: #315a78;
   --paper: #fbf6ea;
   --paper-line: #e4d9bd;
   --gold: #a9822f;
@@ -131,6 +131,24 @@ input:focus-visible,
   color: var(--gray-700);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.invite-meta-line {
+  display: block;
+  margin: 0;
+}
+
+.invite-notice {
+  margin: -0.35rem 0 1.6rem;
+  padding: 0.8rem 0.9rem;
+  border-left: 3px solid var(--gold);
+  background: rgba(169, 130, 47, 0.08);
+  color: var(--gray-700);
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
 .field-label {
@@ -218,8 +236,8 @@ input:focus-visible,
 }
 
 .result-box.status-confirmado {
-  background: #f0f7ee;
-  border-color: #bfe0b4;
+  background: #eef5fb;
+  border-color: #b9d4e8;
 }
 
 .result-box.status-nao_confirmado {
@@ -464,8 +482,8 @@ table.guests-table {
 }
 
 .badge-confirmado {
-  background: #e6f4e1;
-  color: #2b5c1f;
+  background: #e5f0f8;
+  color: #214f70;
 }
 
 .badge-nao_confirmado {

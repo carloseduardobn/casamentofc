@@ -195,14 +195,23 @@ export default function RsvpPage() {
       <div className="invite-card">
         <p className="invite-eyebrow">Confirmação de presença</p>
         <h1 className="invite-title">{event?.eventName || "Carregando..."}</h1>
-        <p className="invite-meta">
-          {eventDateText && <>Data do evento: {eventDateText}. </>}
-          {deadlineText && (
-            <>
-              Prazo para confirmar: {deadlineText}
-              {deadlinePassed ? " (encerrado)" : "."}
-            </>
+        <div className="invite-meta">
+          {eventDateText && (
+            <p className="invite-meta-line">
+              <strong>Data do evento:</strong> {eventDateText}.
+            </p>
           )}
+          {deadlineText && (
+            <p className="invite-meta-line">
+              <strong>Prazo para confirmar:</strong> {deadlineText}
+              {deadlinePassed ? " (encerrado)" : "."}
+            </p>
+          )}
+        </div>
+
+        <p className="invite-notice">
+          <strong>Atenção:</strong> caso a presença não seja confirmada até a
+          data limite, poderá ser aplicada uma taxa.
         </p>
 
         {!selected && (

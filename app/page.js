@@ -210,8 +210,8 @@ export default function RsvpPage() {
         </div>
 
         <p className="invite-notice">
-          <strong>Atenção:</strong> caso a presença não seja confirmada até a
-          data limite, poderá ser aplicada uma taxa.
+          <strong>Atenção:</strong> pedimos que confirme sua presença até a data limite informada,
+          para facilitar a organização do evento.
         </p>
 
         {!selected && (
